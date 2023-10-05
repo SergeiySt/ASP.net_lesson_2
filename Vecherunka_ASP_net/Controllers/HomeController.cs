@@ -22,9 +22,12 @@ namespace Vecherunka_ASP_net.Controllers
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guest) 
         {
-            return View("Thanks", guest);
+            if(ModelState.IsValid)
+            {
+                return View("Thanks", guest);
+            }
+            else 
+                return View();
         }
-            
-        
     }
 }

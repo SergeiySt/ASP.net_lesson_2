@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Vecherunka_ASP_net.props" />
+</Project>

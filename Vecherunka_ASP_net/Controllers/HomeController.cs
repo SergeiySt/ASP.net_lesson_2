@@ -20,7 +20,7 @@ namespace Vecherunka_ASP_net.Controllers
 
 
         [HttpPost]
-        public ViewResult RsvpPost(GuestResponse guest) 
+        public ViewResult RsvpForm(GuestResponse guest) 
         {
             return View("Thanks", guest);
         }

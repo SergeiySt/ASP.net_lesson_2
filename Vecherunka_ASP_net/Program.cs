@@ -4,11 +4,11 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+app.UseStaticFiles();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}");
-    //name: "thanks",
-    //pattern: "thanks",
-    //defaults: new {controller = "Home", action = "RspPost"}
-   // );
+
+app.UseStaticFiles();
 app.Run();

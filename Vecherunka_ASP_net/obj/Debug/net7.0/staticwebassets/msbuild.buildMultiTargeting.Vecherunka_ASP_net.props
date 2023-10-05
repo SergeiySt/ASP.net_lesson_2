@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Vecherunka_ASP_net.props" />
+</Project>
